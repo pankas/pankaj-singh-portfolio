@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, Download } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -137,6 +137,24 @@ const Contact = () => {
                   <span>Strong focus on accessibility and user experience</span>
                 </li>
               </ul>
+              
+              <div className="mt-6 pt-6 border-t border-slate-700/50">
+                <button 
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = process.env.PUBLIC_URL + '/Pankaj_Updated_CV.pdf';
+                    link.download = 'Pankaj_Singh_Resume.pdf';
+                    link.target = '_blank';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                >
+                  <Download size={20} />
+                  Download Resume
+                </button>
+              </div>
             </div>
           </div>
 

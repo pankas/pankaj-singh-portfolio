@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Code, Zap } from 'lucide-react';
+import { Award, Users, Code, Zap, Download } from 'lucide-react';
 
 const About = () => {
   const highlights = [
@@ -50,11 +50,27 @@ const About = () => {
               and multi-modal experiences (voice, audio, haptic) integrated with AI/LLMs. Strong 
               in performance optimization (SSR, Lighthouse), accessibility, and real-time collaboration.
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
               Currently working as SDE-2 Frontend at FanCode, Mumbai, where I've migrated Shopify 
               stores to high-performance React.js frontends and built scalable, themeable architectures 
               for multi-tenant storefronts.
             </p>
+            
+            <button 
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = process.env.PUBLIC_URL + '/Pankaj_Updated_CV.pdf';
+                link.download = 'Pankaj_Singh_Resume.pdf';
+                link.target = '_blank';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 inline-flex"
+            >
+              <Download size={20} />
+              Download Resume
+            </button>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

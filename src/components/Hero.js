@@ -34,7 +34,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2">
+          <button 
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = process.env.PUBLIC_URL + '/Pankaj_Updated_CV.pdf';
+              link.download = 'Pankaj_Singh_Resume.pdf';
+              link.target = '_blank';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+          >
             <Download size={20} />
             Download Resume
           </button>
