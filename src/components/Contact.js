@@ -142,7 +142,7 @@ const Contact = () => {
                 <button 
                   onClick={() => {
                     const link = document.createElement('a');
-                    link.href = process.env.PUBLIC_URL + '/Pankaj_Updated_CV.pdf';
+                    link.href = process.env.PUBLIC_URL + '/Pankaj_Singh_Updated.pdf';
                     link.download = 'Pankaj_Singh_Resume.pdf';
                     link.target = '_blank';
                     document.body.appendChild(link);

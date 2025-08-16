@@ -28,7 +28,7 @@ const Projects = () => {
         'Optimized streaming TV apps reducing frame drops by 90–95% using segment virtualization',
         'Added multi-modal haptic feedback for iOS in Swift to improve interactive engagement'
       ],
-      technologies: ['React.js', 'Next.js', 'Redux', 'TypeScript', 'Material-UI', 'GraphQL', 'WebSockets', 'Canvas API', 'Swift'],
+      technologies: ['React.js','Kotlin', 'Next.js', 'Redux', 'TypeScript', 'Material-UI', 'GraphQL', 'WebSockets', 'Canvas API', 'Swift'],
       category: 'professional',
       links: {
         company: 'https://fancode.com'

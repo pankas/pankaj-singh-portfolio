@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-white cursor-pointer" onClick={() => scrollToSection('home')}>
-              Portfolio
+              {/* Portfolio */}
             </h1>
           </div>
           
