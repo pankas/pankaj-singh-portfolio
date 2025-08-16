@@ -7,14 +7,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'FanCode E-commerce Platform',
+      title: 'FanCode',
       company: 'FanCode, Mumbai',
       role: 'SDE-2 Frontend',
       duration: 'Jul 2021 - Present',
       location: 'Mumbai',
-      description: 'Migrated Shopify store to high-performance React.js frontend integrated with Magento backend, enabling richer UI interactions.',
+      description: 'Contributed to both e-commerce and content platforms at FanCode, driving scalable frontend development across storefronts, CMS systems, and streaming workflows. Designed and implemented features that enhanced user engagement, optimized performance, and supported new revenue models through seamless payment integrations and interactive user experiences.',
       highlights: [
-        'Designed scalable, themeable architecture using Figma API and Styled Components for white-labeled multi-tenant storefronts',
+        'Migrated Shopify store to high-performance React.js frontend integrated with Magento backend, enabling richer UI interactions',
+        'Designed scalable, themeable architecture using Figma API and Styled Components for white-labeled multi-tenant storefronts (ICC, IPL teams)',
         'Built in-house CMS from scratch using React and Material-UI, supporting large media uploads and complex form workflows',
         'Engineered multi-pane, resizable interfaces using Material-UI layout components for dynamic content areas',
         'Developed Canvas-based jersey personalization tool with drag-and-drop and dynamic positioning',
@@ -22,9 +23,10 @@ const Projects = () => {
         'Implemented custom SSR solution, improving SEO and boosting Lighthouse score from 34% to 85%',
         'Integrated AI-driven conversational UIs with LLMs/AI agents for intelligent, interactive experiences',
         'Implemented real-time features using WebSockets for live scoring updates and streaming metadata synchronization',
-        'Optimized streaming TV apps reducing frame drops by 90–95% using segment virtualization',
         'Architected GraphQL schema for unified metadata across React Native, Android TV, and web',
-        'Added multi-modal haptic feedback for iOS in Swift'
+        'Developed payment-related features for subscriptions and in-app purchases to enhance revenue channels',
+        'Optimized streaming TV apps reducing frame drops by 90–95% using segment virtualization',
+        'Added multi-modal haptic feedback for iOS in Swift to improve interactive engagement'
       ],
       technologies: ['React.js', 'Next.js', 'Redux', 'TypeScript', 'Material-UI', 'GraphQL', 'WebSockets', 'Canvas API', 'Swift'],
       category: 'professional',
